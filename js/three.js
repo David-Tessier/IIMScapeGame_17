@@ -113,7 +113,6 @@ const tick = () =>
         if( first_is_solved == false){
             console.log("work as intended")
             first_is_solved = true
-            alert("you've solved the first puzzle ! The first part of the password is : 3Yc")
             camera.position.x = 0
             camera.position.y = 4
             camera.position.z = -30
@@ -134,8 +133,10 @@ const tick = () =>
         if(Math.round(camera.position.x) == -20 && second_is_solved == false){
             console.log("woah")
             scene.remove(ship)
-            alert('other part of the code OpD')
             second_is_solved = true
+            document.querySelector('.audio3DWin').play()
+            document.querySelector('.enigma3').style.display = "flex";
+
 
         }
 

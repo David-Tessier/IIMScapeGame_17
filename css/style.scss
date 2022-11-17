@@ -128,17 +128,17 @@ section
 
 
 .pubbarbe{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img{
-        width: 20%;
+        width: 50%;
     }
 }
 
 section{
     display: none;
-
-    img{
-        opacity: 0%;
-    }
 }
 
 .enigma2{

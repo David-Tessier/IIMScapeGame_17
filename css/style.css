@@ -91,13 +91,16 @@ section {
   .enigma2 canvas {
     border-radius: 30px; }
 
-.pubbarbe img {
-  width: 20%; }
+.pubbarbe {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .pubbarbe img {
+    width: 50%; }
 
 section {
   display: none; }
-  section img {
-    opacity: 0%; }
 
 .enigma2 {
   display: none; }
