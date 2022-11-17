@@ -10,7 +10,7 @@ import * as dat from 'https://cdn.jsdelivr.net/npm/lil-gui@0.17/+esm';
  */
 
 // Debug
-const gui = new dat.GUI()
+//const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')

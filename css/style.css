@@ -16,72 +16,59 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 html,
 body {
   height: 100%;
   margin: 0;
-  background: url(../assets/bg.png) no-repeat center center fixed;
-}
+  background: url(../assets/bg.png) no-repeat center center fixed; }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.635);
-}
-header .logo {
-  height: 80px;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  width: 300px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-  font-family: "Nunito", sans-serif;
-}
-header nav ul li a:hover {
-  color: #f00;
-}
+  background-color: rgba(44, 14, 14, 0.534); }
+  header .logo {
+    height: 80px; }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 300px; }
+    header nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      font-family: 'Nunito', sans-serif; }
+      header nav ul li a:hover {
+        color: #f00; }
 
 section {
   display: flex;
@@ -89,22 +76,25 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .enigma1 div .code {
-  display: inline;
-}
+  display: inline; }
 
 .enigma2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   width: auto;
-  height: 500px;
-}
-.enigma2 canvas {
-  border-radius: 30px;
-}
+  height: 500px; }
+  .enigma2 canvas {
+    border-radius: 30px; }
+
+.popup {
+  position: absolute; }
+
+.pubbarbe img {
+  width: 20%; }
 
 /*# sourceMappingURL=style.css.map */

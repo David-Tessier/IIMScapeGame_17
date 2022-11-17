@@ -55,8 +55,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-	background-color: rgba(0, 0, 0, 0.635);
-
+	background-color: rgba(44, 14, 14, 0.534);
 
 	.logo{
 		height: 80px;
@@ -116,7 +115,8 @@ section
 
 .enigma2{
 	display: flex;
-	justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
 	align-items: center;
 	width: auto;
 	height: 500px;
@@ -124,6 +124,18 @@ section
 	canvas{
 		border-radius: 30px;
 	}
+}
+
+.popup{
+    position: absolute;
+}
+
+
+
+.pubbarbe{
+    img{
+        width: 20%;
+    }
 }
 
 // .enigma3
