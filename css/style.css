@@ -48,6 +48,10 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Tesla";
+  src: URL("../assets/tesla/TESLA.ttf") format("truetype");
+}
 html,
 body {
   height: 100%;
@@ -66,8 +70,8 @@ header .logo {
 }
 header nav ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: start;
   list-style: none;
   width: 300px;
 }
@@ -77,10 +81,11 @@ header nav ul li a {
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
-  font-family: "Nunito", sans-serif;
+  font-family: "Tesla", sans-serif;
 }
 header nav ul li a:hover {
-  color: #f00;
+  color: #ff9100;
+  text-shadow: 0 10px rgba(255, 49, 0, 0.7), 0 0 40px rgba(255, 49, 0, 0.7), 0 0 100px rgba(255, 49, 0, 0.7);
 }
 
 section {
@@ -92,6 +97,20 @@ section {
   margin-bottom: 100px;
 }
 
+.home {
+  display: flex;
+}
+
+.enigma1 {
+  display: none;
+  height: 100%;
+}
+.enigma1 div {
+  color: #fff;
+  font-size: 1;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
 .enigma1 div .code {
   display: inline;
 }
@@ -104,6 +123,17 @@ section {
   height: 500px;
 }
 .enigma2 canvas {
+  border-radius: 30px;
+}
+
+.enigma3 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 500px;
+}
+.enigma3 canvas {
   border-radius: 30px;
 }
 

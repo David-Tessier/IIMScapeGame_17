@@ -42,6 +42,11 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: 'Tesla';
+    src: URL('../assets/tesla/TESLA.ttf') format('truetype');
+  }
+
 html,
 body 
 {
@@ -67,8 +72,8 @@ header
         ul
         {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: space-around;
+            align-items: start;
             list-style: none;
             width: 300px;
 
@@ -81,11 +86,14 @@ header
                     font-size: 1.2rem;
                     font-weight: 600;
                     transition: all 0.3s ease-in-out;
-                    font-family: 'Nunito', sans-serif;
-
+                    font-family: 'Tesla', sans-serif;
                     &:hover
                     {
-                        color: #f00;
+                        color: rgb(255, 145, 0);
+                        text-shadow: 0 10px rgba(255, 49, 0, .7),
+                        0 0 40px rgba(255, 49, 0, .7),
+                        0 0 100px rgba(255, 49, 0, .7);
+
                     }
                 }
             }
@@ -103,10 +111,21 @@ section
 	margin-bottom: 100px;
 }
 
+.home
+{
+    display:flex;
+}
+
 .enigma1
 {
+    display:none;
+    height: 100%;
     div
     {
+        color: #fff;
+        font-size: 1;
+        font-weight: 600;
+        font-family: 'Nunito', sans-serif;  
        .code
        {
         display: inline;
@@ -126,7 +145,14 @@ section
 	}
 }
 
-// .enigma3
-// {
-//     display : none;
-// }
+.enigma3{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 500px;
+
+    canvas{
+        border-radius: 30px;
+    }
+}
