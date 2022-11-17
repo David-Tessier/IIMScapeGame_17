@@ -18,12 +18,10 @@ var btn1 = document.querySelector('.answer');
 var input1 = document.querySelector('.input');
 var body1 = document.querySelector('body');
 
-btn.addEventListener('click', function() {
+btn1.addEventListener('click', function() {
     if (input.value === code) {
-        var enigma1 = document.querySelector('.enigma1');
         var enigma2 = document.querySelector('.enigma2');
-        enigma1.style.display = 'none';
-        enigma2.style.display = 'block';   
+        enigma2.style.display = 'flex';   
     }
 }
 );
