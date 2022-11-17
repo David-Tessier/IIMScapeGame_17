@@ -102,6 +102,11 @@ const clock = new THREE.Clock()
 
 let first_is_solved = false
 let second_is_solved = false
+let audio3DWin = document.querySelector('.audio3DWin')
+
+audio3DWin.addEventListener('ended',function(){
+    document.querySelector('.audioMARKETintro').play()
+})
 
 // functions
 
@@ -134,7 +139,7 @@ const tick = () =>
             console.log("woah")
             scene.remove(ship)
             second_is_solved = true
-            document.querySelector('.audio3DWin').play()
+            audio3DWin.play()
             document.querySelector('.enigma3').style.display = "flex";
 
 
