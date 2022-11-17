@@ -47,4 +47,71 @@ body
 {
   height: 100%;
   margin: 0;
+  background: url(../assets/bg.png) no-repeat center center fixed;
 }
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav
+    {
+        ul
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            width: 300px;
+
+            li
+            {
+                a
+                {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    transition: all 0.3s ease-in-out;
+                    font-family: 'Nunito', sans-serif;
+
+                    &:hover
+                    {
+                        color: #f00;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.enigma1
+{
+    div
+    {
+       .code
+       {
+        display: inline;
+       }
+    }
+}
+
+// .enigma2
+// {
+//     display : none;
+// }
+
+// .enigma3
+// {
+//     display : none;
+// }
