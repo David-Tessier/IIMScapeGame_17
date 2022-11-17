@@ -114,10 +114,13 @@ section
     }
 }
 
-// .enigma2
-// {
-//     display : none;
-// }
+.enigma2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 500px;
+}
 
 // .enigma3
 // {

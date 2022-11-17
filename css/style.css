@@ -96,4 +96,12 @@ section {
   display: inline;
 }
 
+.enigma2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 500px;
+}
+
 /*# sourceMappingURL=style.css.map */
