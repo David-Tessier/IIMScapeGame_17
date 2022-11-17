@@ -94,4 +94,40 @@ section {
 .pubbarbe img {
   width: 20%; }
 
+section {
+  display: none; }
+  section img {
+    opacity: 0%; }
+
+.enigma2 {
+  display: none; }
+
+header {
+  display: none; }
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 100;
+  margin: 0px; }
+  .intro h1 {
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding: 30px; }
+  .intro img {
+    opacity: 100%; }
+  .intro button {
+    background-color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

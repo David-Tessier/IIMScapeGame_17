@@ -27,3 +27,20 @@ btn.addEventListener('click', function() {
     }
 }
 );
+
+
+// code for fade out and intro
+
+audioIntro = document.querySelector('.audioIntro')
+
+var s = document.querySelector('.introbtn');
+console.log(s)
+s.addEventListener('click', function(){
+    
+    s.style.opacity = 1;
+    (function fade(){(s.style.opacity-=.1)<0?s.style.display="none":setTimeout(fade,40)})();
+    (function fade(){(document.querySelector('h1').style.opacity-=.1)<0?document.querySelector('h1').style.display="none":setTimeout(fade,40)})();
+
+    audioIntro.play();
+    
+})
