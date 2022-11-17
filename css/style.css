@@ -59,6 +59,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+header .logo {
+  height: 80px;
 }
 header nav ul {
   display: flex;
@@ -84,6 +88,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .enigma1 div .code {
