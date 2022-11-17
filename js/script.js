@@ -21,21 +21,22 @@ const scene = new THREE.Scene()
 scene.background = new THREE.Color( 0xff0000 );
 
 
-
-//const cube = new THREE.Mesh( new THREE.BoxGeometry( 1, 1, 1 ), new THREE.MeshBasicMaterial( {color: 0x00ff00} ) );
-// scene.add( cube );
-
 const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 scene.add( directionalLight );
 
 
 // loader 
 
+let moto
+let ship 
+
 const loader = new GLTFLoader();
 
-const moto = loader.load( '3d/moto_casser.gltf', function ( gltf ) {
+loader.load( '3d/moto_casser.gltf', function ( gltf ) {
 
-	scene.add( gltf.scene );
+    moto = gltf.scene
+
+	scene.add( moto );
 
 }, undefined, function ( error ) {
 
@@ -50,15 +51,15 @@ const moto = loader.load( '3d/moto_casser.gltf', function ( gltf ) {
  * Sizes
  */
 const sizes = {
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: window.innerWidth / 2,
+    height: window.innerHeight / 2
 }
 
 window.addEventListener('resize', () =>
 {
     // Update sizes
-    sizes.width = window.innerWidth
-    sizes.height = window.innerHeight
+    sizes.width = window.innerWidth / 2
+    sizes.height = window.innerHeight / 2
 
     // Update camera
     camera.aspect = sizes.width / sizes.height
@@ -99,13 +100,51 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  */
 const clock = new THREE.Clock()
 
+let first_is_solved = false
+let second_is_solved = false
+
+// functions
+
 const tick = () =>
 {
+
+    if (Math.round(camera.position.x) == -2 && Math.round(camera.position.y) == -2){
+
+        if( first_is_solved == false){
+            console.log("work as intended")
+            first_is_solved = true
+            alert("you've solved the first puzzle ! The first part of the password is : 3Yc")
+            camera.position.x = 0
+            camera.position.y = 4
+            camera.position.z = -3
+            scene.remove(moto)
+
+            loader.load( '3d/vaisseau_casse.gltf', function ( gltf ) {
+                ship = gltf.scene
+                scene.add( ship );
+            }, undefined, function ( error ) {
+                console.error( error );
+            } );
+
+        }
+    }
+
+    if(first_is_solved == true){
+        console.log(camera.position)
+        if(Math.round(camera.position.x) == -20 && second_is_solved == false){
+            console.log("woah")
+            scene.remove(ship)
+            alert('other part of the code OpD')
+            second_is_solved = true
+
+        }
+
+    }
+
     const elapsedTime = clock.getElapsedTime()
 
     // Update controls
     controls.update()
-    console.log(camera.position)
 
     // Render
     renderer.render(scene, camera)
