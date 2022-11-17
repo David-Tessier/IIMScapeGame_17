@@ -18,7 +18,7 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-scene.background = new THREE.Color( 0xff0000 );
+scene.background = new THREE.Color( 0x212121 );
 
 
 const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
@@ -32,7 +32,7 @@ let ship
 
 const loader = new GLTFLoader();
 
-loader.load( '3d/moto_casser.gltf', function ( gltf ) {
+loader.load( 'assets/moto_casser.gltf', function ( gltf ) {
 
     moto = gltf.scene
 
@@ -119,7 +119,7 @@ const tick = () =>
             camera.position.z = -30
             scene.remove(moto)
 
-            loader.load( '3d/vaisseau_casse.gltf', function ( gltf ) {
+            loader.load( 'assets/vaisseau_casse.gltf', function ( gltf ) {
                 ship = gltf.scene
                 scene.add( ship );
             }, undefined, function ( error ) {

@@ -55,7 +55,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-	background-color: rgba(0, 0, 0, 0.637);
+	background-color: rgba(0, 0, 0, 0.635);
 
 
 	.logo{
@@ -120,6 +120,10 @@ section
 	align-items: center;
 	width: auto;
 	height: 500px;
+
+	canvas{
+		border-radius: 30px;
+	}
 }
 
 // .enigma3

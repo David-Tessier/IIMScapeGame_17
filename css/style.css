@@ -59,7 +59,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 0, 0, 0.635);
 }
 header .logo {
   height: 80px;
@@ -102,6 +102,9 @@ section {
   align-items: center;
   width: auto;
   height: 500px;
+}
+.enigma2 canvas {
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
