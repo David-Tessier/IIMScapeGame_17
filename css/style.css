@@ -16,45 +16,56 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 @font-face {
-  font-family: 'Tesla';
-  src: URL("../assets/tesla/TESLA.ttf") format("truetype"); }
+  font-family: "Tesla";
+  src: URL("../assets/tesla/TESLA.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Oxanium';
-  src: URL("../assets/oxanium/Oxanium-Regular.ttf") format("truetype"); }
+  font-family: "Oxanium";
+  src: URL("../assets/oxanium/Oxanium-Regular.ttf") format("truetype");
+}
 * {
-  z-index: 1; }
+  z-index: 1;
+}
 
 html,
 body {
   height: 100%;
   margin: 0;
-  background: black; }
+  background: black;
+}
 
 .background {
   background-image: url("../assets/bg.gif");
@@ -71,35 +82,42 @@ body {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(50px);
-  z-index: 0; }
+  z-index: 0;
+}
 
 .container {
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(44, 14, 14, 0.534); }
-  header .logo {
-    height: 80px; }
-  header nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    list-style: none;
-    width: 300px; }
-    header nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: 600;
-      transition: all 0.3s ease-in-out;
-      font-family: 'Tesla', sans-serif; }
-      header nav ul li a:hover {
-        color: #ff9100;
-        text-shadow: 0 10px rgba(255, 49, 0, 0.7), 0 0 40px rgba(255, 49, 0, 0.7), 0 0 100px rgba(255, 49, 0, 0.7); }
+  background-color: rgba(44, 14, 14, 0.534);
+}
+header .logo {
+  height: 80px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  list-style: none;
+  width: 500px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  font-family: "Tesla", sans-serif;
+}
+header nav ul li a:hover {
+  color: #ff9100;
+  text-shadow: 0 10px rgba(255, 49, 0, 0.7), 0 0 40px rgba(255, 49, 0, 0.7), 0 0 100px rgba(255, 49, 0, 0.7);
+}
 
 .play {
   background-color: orange;
@@ -108,13 +126,16 @@ header {
   border-radius: 20px;
   padding: 15px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .input {
-  margin: 30px; }
+  margin: 30px;
+}
 
 .lastCode {
-  margin: 30px; }
+  margin: 30px;
+}
 
 .answer {
   background-color: orange;
@@ -123,7 +144,8 @@ header {
   border-radius: 20px;
   padding: 15px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 section {
   display: flex;
@@ -131,52 +153,36 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+}
 
 .add {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 50px; }
+  margin: 50px;
+}
 
 .paint {
   position: absolute;
   left: 38%;
-  cursor: pointer; }
-
-.home {
-  display: none;
-  font-family: 'Oxanium', sans-serif;
-  color: #e2e2e2; }
-  .home .contrat {
-    background: url("../assets/contrat.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    position: static;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 52px; }
-    .home .contrat p {
-      font-weight: 600;
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 50px; }
+  cursor: pointer;
+}
 
 .enigma1 {
   display: none;
-  height: 100%; }
-  .enigma1 div {
-    color: #fff;
-    font-size: 1;
-    font-weight: 600;
-    font-family: 'Nunito', sans-serif; }
-    .enigma1 div .code {
-      display: inline; }
+  height: 100%;
+}
+.enigma1 div {
+  color: #fff;
+  font-size: 1;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+.enigma1 div .code {
+  display: inline;
+}
 
 .enigma2 {
   display: flex;
@@ -184,27 +190,34 @@ section {
   flex-direction: row;
   align-items: center;
   width: auto;
-  height: 500px; }
-  .enigma2 canvas {
-    border-radius: 30px; }
+  height: 500px;
+}
+.enigma2 canvas {
+  border-radius: 30px;
+}
 
 .pubbarbe {
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .pubbarbe img {
-    width: 50%; }
+  justify-content: center;
+}
+.pubbarbe img {
+  width: 50%;
+}
 
 section {
-  display: none; }
+  display: none;
+}
 
 .enigma2 {
-  display: none; }
+  display: none;
+}
 
 header {
   display: none;
-  background-color: #ff4d00; }
+  background-color: #ff4d00;
+}
 
 .intro {
   display: flex;
@@ -215,29 +228,45 @@ header {
   height: 100%;
   background-color: black;
   z-index: 100;
-  margin: 0px; }
-  .intro h1 {
-    font-size: 30px;
-    font-family: 'Nunito', sans-serif;
-    padding: 30px; }
-  .intro img {
-    opacity: 100%; }
-  .intro button {
-    background-color: orange;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 20px;
-    border: none;
-    cursor: pointer; }
+  margin: 0px;
+}
+.intro h1 {
+  font-size: 30px;
+  font-family: "Oxanium", sans-serif;
+  padding: 30px;
+  color: #fff;
+}
+.intro img {
+  opacity: 100%;
+}
+.intro button {
+  background-color: orange;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Oxanium", sans-serif;
+}
 
 .enigma3 {
   display: none;
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 500px; }
-  .enigma3 canvas {
-    border-radius: 30px; }
+  height: 500px;
+}
+.enigma3 canvas {
+  border-radius: 30px;
+}
+
+.endingGif {
+  display: none;
+  text-align: center;
+  width: 50%;
+  z-index: 1;
+  position: fixed;
+}
 
 /*# sourceMappingURL=style.css.map */

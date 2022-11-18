@@ -12,7 +12,6 @@ btn.addEventListener('click', function() {
 
 var code = "psacs"
 
-// if the answer in the input is correct, change the background color of the body to green
 
 var btn1 = document.querySelector('.answer');
 var input1 = document.querySelector('.input');
@@ -29,11 +28,6 @@ btn1.addEventListener('click', function() {
     }
 }
 );
-
-document.querySelector('.play').addEventListener('click', function(){
-    document.querySelector('.home').style.display = 'none';
-})
-
 
 // code for fade out and intro
 
@@ -58,7 +52,6 @@ audioIntro.addEventListener('ended', function(){
 
     document.querySelector('header').style.display = "flex";
     document.querySelector('.enigma1').style.display = "flex";
-    document.querySelector('.home').style.display = "flex";
     
 
     audioIntroNext.play()
@@ -85,6 +78,7 @@ lastInput.addEventListener('change', function(){
         document.querySelector('.audioEnd').play()
         document.querySelector('.container').style.display = "none";
         (function fade(){(document.querySelector('.intro').style.opacity+=.1)<100?document.querySelector('.intro').style.display="flex":setTimeout(fade,40)})();
+        document.querySelector('.endingGif').style.display = "flex";
 
         
 

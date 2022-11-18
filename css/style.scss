@@ -111,7 +111,7 @@ header
             justify-content: space-around;
             align-items: start;
             list-style: none;
-            width: 300px;
+            width: 500px;
 
             li
             {
@@ -190,36 +190,36 @@ section
 }
 
 
-.home
-{
-    display: none;
-    font-family: 'Oxanium', sans-serif;
-    color: rgb(226, 226, 226);
+// .home
+// {
+//     display: none;
+//     font-family: 'Oxanium', sans-serif;
+//     color: rgb(226, 226, 226);
 
-    .contrat
-    {
-        background: url("../assets/contrat.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        position: static;
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 52px;   
+//     .contrat
+//     {
+//         background: url("../assets/contrat.png");
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//         background-position: center;
+//         position: static;
+//         width: 20%;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         gap: 52px;   
         
-        p
-        {
-            font-weight: 600;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-    }
+//         p
+//         {
+//             font-weight: 600;
+//             text-align: center;
+//             margin-top: 50px;
+//             margin-bottom: 50px;
+//         }
+//     }
 
-}
+// }
 
 .enigma1
 {
@@ -290,8 +290,9 @@ header{
 
     h1{
         font-size: 30px;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Oxanium', sans-serif;
         padding: 30px;
+        color: #fff;
     }
 
     img{
@@ -306,6 +307,7 @@ header{
         padding: 20px;
         border: none;
         cursor: pointer;
+        font-family: 'Oxanium', sans-serif;
     }
 }
 
@@ -321,3 +323,11 @@ header{
     }
 }
 
+.endingGif
+{
+    display: none;
+    text-align:center;
+    width: 50%;
+    z-index: 1;
+    position: fixed;
+}
