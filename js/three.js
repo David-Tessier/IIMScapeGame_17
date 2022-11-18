@@ -116,7 +116,6 @@ const tick = () =>
     if (Math.round(camera.position.x) == -2 && Math.round(camera.position.y) == -2){
 
         if( first_is_solved == false){
-            console.log("work as intended")
             first_is_solved = true
             camera.position.x = 0
             camera.position.y = 4
@@ -134,9 +133,7 @@ const tick = () =>
     }
 
     if(first_is_solved == true){
-        console.log(camera.position)
         if(Math.round(camera.position.x) == -20 && second_is_solved == false){
-            console.log("woah")
             scene.remove(ship)
             second_is_solved = true
             audio3DWin.play()
