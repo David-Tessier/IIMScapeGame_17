@@ -83,5 +83,11 @@ lastInput.addEventListener('change', function(){
     if (lastInput.value == 'P3S9'){
         lastInput.readOnly = true;
         document.querySelector('.audioEnd').play()
+        document.querySelector('.container').style.display = "none";
+        (function fade(){(document.querySelector('.intro').style.opacity+=.1)<100?document.querySelector('.intro').style.display="flex":setTimeout(fade,40)})();
+
+        
+
+        
     }
 })
