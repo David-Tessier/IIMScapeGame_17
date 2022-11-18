@@ -197,10 +197,16 @@ section {
 }
 
 .pubcat {
+  width: fit-content;
+}
+.pubcat img {
   width: 255px;
 }
 
 .pubclub {
+  width: fit-content;
+}
+.pubclub img {
   width: 255px;
 }
 
