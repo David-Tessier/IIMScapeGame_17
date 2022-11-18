@@ -42,20 +42,19 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: "Tesla";
-  src: URL("../assets/tesla/TESLA.ttf") format("truetype");
-}
+  font-family: 'Tesla';
+  src: URL("../assets/tesla/TESLA.ttf") format("truetype"); }
 @font-face {
-  font-family: "Oxanium";
-  src: URL("../assets/oxanium/Oxanium-Regular.ttf") format("truetype");
-}
+  font-family: 'Oxanium';
+  src: URL("../assets/oxanium/Oxanium-Regular.ttf") format("truetype"); }
+* {
+  z-index: 1; }
+
 html,
 body {
   height: 100%;
   margin: 0;
-  
-  background: black;
-}
+  background: black; }
 
 .background {
   background-image: url("../assets/bg.gif");
@@ -72,46 +71,35 @@ body {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(50px);
-  z-index: 1;
-}
+  z-index: 0; }
 
 .container {
-  position: fixed;
   z-index: 2;
-  width: 100%;
-}
-
+  width: 100%; }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: rgba(0, 0, 0, 0.635);
-}
-header .logo {
-  height: 80px;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: start;
-  list-style: none;
-  width: 300px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-  font-family: "Tesla", sans-serif;
-}
-header nav ul li a:hover {
-  color: #ff9100;
-  text-shadow: 0 10px rgba(255, 49, 0, 0.7), 0 0 40px rgba(255, 49, 0, 0.7), 0 0 100px rgba(255, 49, 0, 0.7);
-}
-
+  background-color: rgba(44, 14, 14, 0.534); }
+  header .logo {
+    height: 80px; }
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    list-style: none;
+    width: 300px; }
+    header nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      font-family: 'Tesla', sans-serif; }
+      header nav ul li a:hover {
+        color: #ff9100;
+        text-shadow: 0 10px rgba(255, 49, 0, 0.7), 0 0 40px rgba(255, 49, 0, 0.7), 0 0 100px rgba(255, 49, 0, 0.7); }
 
 section {
   display: flex;
@@ -123,36 +111,31 @@ section {
 
 .home {
   display: flex;
-  font-family: "Oxanium", sans-serif;
-  color: #e2e2e2;
-}
-.home .contrat {
-  background: url("../assets/contrat.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: static;
-  width: 20%;
-}
-.home .contrat p {
-  font-weight: 600;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+  font-family: 'Oxanium', sans-serif;
+  color: #e2e2e2; }
+  .home .contrat {
+    background: url("../assets/contrat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: static;
+    width: 20%; }
+    .home .contrat p {
+      font-weight: 600;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px; }
 
 .enigma1 {
   display: none;
-  height: 100%;
-}
-.enigma1 div {
-  color: #fff;
-  font-size: 1;
-  font-weight: 600;
-  font-family: "Nunito", sans-serif;
-}
-.enigma1 div .code {
-  display: inline; }
+  height: 100%; }
+  .enigma1 div {
+    color: #fff;
+    font-size: 1;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif; }
+    .enigma1 div .code {
+      display: inline; }
 
 .enigma2 {
   display: flex;
@@ -211,10 +194,8 @@ header {
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 500px;
-}
-.enigma3 canvas {
-  border-radius: 30px;
-}
+  height: 500px; }
+  .enigma3 canvas {
+    border-radius: 30px; }
 
 /*# sourceMappingURL=style.css.map */

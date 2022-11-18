@@ -1,14 +1,14 @@
 // when the button with class btn is clicked turn every element with class .box to red
 
-var btn = document.querySelector('.sprayPaint');
+//var btn = document.querySelector('.sprayPaint');
 var box = document.querySelectorAll('.code');
 
-btn.addEventListener('click', function() {
-    for (var i = 0; i < box.length; i++) {
-        box[i].style.color = 'red';
-    }
-    }
-);
+//btn.addEventListener('click', function() {
+//    for (var i = 0; i < box.length; i++) {
+//        box[i].style.color = 'red';
+//    }
+//    }
+//);
 
 var code = "psacs"
 
@@ -16,7 +16,7 @@ var code = "psacs"
 
 var btn1 = document.querySelector('.answer');
 var input1 = document.querySelector('.input');
-var body1 = document.querySelector('body');
+//var body1 = document.querySelector('body');
 
 
 let creawin = document.querySelector('.audioCreaWin')
