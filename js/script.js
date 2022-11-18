@@ -30,6 +30,10 @@ btn1.addEventListener('click', function() {
 }
 );
 
+document.querySelector('.play').addEventListener('click', function(){
+    document.querySelector('.home').style.display = 'none';
+})
+
 
 // code for fade out and intro
 
@@ -54,6 +58,8 @@ audioIntro.addEventListener('ended', function(){
 
     document.querySelector('header').style.display = "flex";
     document.querySelector('.enigma1').style.display = "flex";
+    document.querySelector('.home').style.display = "flex";
+    
 
     audioIntroNext.play()
 })
@@ -64,4 +70,18 @@ audioIntroNext.addEventListener('ended', function(){
 
 creawin.addEventListener('ended', function(){
     document.querySelector('.audio3DIntro').play()
+})
+
+
+// P3S9
+
+// code for final password guess
+
+let lastInput = document.querySelector('.lastCode')
+
+lastInput.addEventListener('change', function(){
+    if (lastInput.value == 'P3S9'){
+        lastInput.readOnly = true;
+        document.querySelector('.audioEnd').play()
+    }
 })
