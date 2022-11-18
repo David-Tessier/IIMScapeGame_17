@@ -18,12 +18,14 @@ var btn1 = document.querySelector('.answer');
 var input1 = document.querySelector('.input');
 var body1 = document.querySelector('body');
 
+
 let creawin = document.querySelector('.audioCreaWin')
 
 btn1.addEventListener('click', function() {
     if (input1.value === code) {
         creawin.play()
         document.querySelector('.enigma2').style.display = "flex";
+
     }
 }
 );
