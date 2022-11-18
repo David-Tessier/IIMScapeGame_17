@@ -196,6 +196,14 @@ section {
   border-radius: 30px;
 }
 
+.pubcat {
+  width: 255px;
+}
+
+.pubclub {
+  width: 255px;
+}
+
 .pubbarbe {
   margin-top: 50px;
   display: flex;
