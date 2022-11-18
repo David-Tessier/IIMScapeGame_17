@@ -175,6 +175,21 @@ section
 	margin-bottom: 100px;
 }
 
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px;
+}
+
+.paint{
+    position: absolute;
+    left: 38%;
+    cursor: pointer;
+}
+
+
 .home
 {
     display: none;
@@ -258,6 +273,8 @@ section{
 
 header{
     display: none;
+    background-color: rgb(255 77 0);
+
 }
 
 .intro{

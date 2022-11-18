@@ -1,14 +1,14 @@
 // when the button with class btn is clicked turn every element with class .box to red
 
-//var btn = document.querySelector('.sprayPaint');
+var btn = document.querySelector('.paint');
 var box = document.querySelectorAll('.code');
 
-//btn.addEventListener('click', function() {
-//    for (var i = 0; i < box.length; i++) {
-//        box[i].style.color = 'red';
-//    }
-//    }
-//);
+btn.addEventListener('click', function() {
+    for (var i = 0; i < box.length; i++) {
+        box[i].style.color = 'red';
+    }
+    }
+);
 
 var code = "psacs"
 
