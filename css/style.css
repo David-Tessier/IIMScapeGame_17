@@ -16,37 +16,30 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 @font-face {
   font-family: "Tesla";
@@ -60,6 +53,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  
   background: black;
 }
 
@@ -87,10 +81,12 @@ body {
   width: 100%;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background-color: rgba(0, 0, 0, 0.635);
 }
 header .logo {
@@ -116,14 +112,14 @@ header nav ul li a:hover {
   text-shadow: 0 10px rgba(255, 49, 0, 0.7), 0 0 40px rgba(255, 49, 0, 0.7), 0 0 100px rgba(255, 49, 0, 0.7);
 }
 
+
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .home {
   display: flex;
@@ -156,19 +152,59 @@ section {
   font-family: "Nunito", sans-serif;
 }
 .enigma1 div .code {
-  display: inline;
-}
+  display: inline; }
 
 .enigma2 {
-  display: none;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   width: auto;
-  height: 500px;
-}
-.enigma2 canvas {
-  border-radius: 30px;
-}
+  height: 500px; }
+  .enigma2 canvas {
+    border-radius: 30px; }
+
+.pubbarbe {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .pubbarbe img {
+    width: 50%; }
+
+section {
+  display: none; }
+
+.enigma2 {
+  display: none; }
+
+header {
+  display: none; }
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 100;
+  margin: 0px; }
+  .intro h1 {
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding: 30px; }
+  .intro img {
+    opacity: 100%; }
+  .intro button {
+    background-color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer; }
 
 .enigma3 {
   display: none;

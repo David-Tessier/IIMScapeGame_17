@@ -10,7 +10,7 @@ import * as dat from 'https://cdn.jsdelivr.net/npm/lil-gui@0.17/+esm';
  */
 
 // Debug
-const gui = new dat.GUI()
+//const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -102,6 +102,11 @@ const clock = new THREE.Clock()
 
 let first_is_solved = false
 let second_is_solved = false
+let audio3DWin = document.querySelector('.audio3DWin')
+
+audio3DWin.addEventListener('ended',function(){
+    document.querySelector('.audioMARKETintro').play()
+})
 
 // functions
 
@@ -113,7 +118,6 @@ const tick = () =>
         if( first_is_solved == false){
             console.log("work as intended")
             first_is_solved = true
-            alert("you've solved the first puzzle ! The first part of the password is : 3Yc")
             camera.position.x = 0
             camera.position.y = 4
             camera.position.z = -30
@@ -134,8 +138,10 @@ const tick = () =>
         if(Math.round(camera.position.x) == -20 && second_is_solved == false){
             console.log("woah")
             scene.remove(ship)
-            alert('other part of the code OpD')
             second_is_solved = true
+            audio3DWin.play()
+            document.querySelector('.enigma3').style.display = "flex";
+
 
         }
 
